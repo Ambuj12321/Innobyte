@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Thanks</title>
+  <style>
+    .name-animation {
+        font-size: 2em;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .letter {
+        display: inline-block;
+        animation: bounce 1s infinite alternate;
+        animation-delay: var(--delay);
+    }
+    div{
+        padding-left: 600px;
+        padding-top: 250px;
+        color: green;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateY(-25px);
+        }
+    }
+  </style>
+  
+</head>
+<body>
+    <div class="name-animation">
+        <span class="letter" style="--delay: 0s">T</span>
+        <span class="letter" style="--delay: 0.2s">H</span>
+        <span class="letter" style="--delay: 0.4s">A</span>
+        <span class="letter" style="--delay: 0.6s">N</span>
+        <span class="letter" style="--delay: 0.8s">K</span>
+        <span class="letter" style="--delay: 1s">S</span>
+        <span class="letter" style="--delay: 1.2s">!</span>
+ 
+        
+    </div>
+</body>
+</html>
+
